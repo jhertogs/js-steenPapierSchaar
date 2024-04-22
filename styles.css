@@ -78,13 +78,15 @@ h2 {
     margin-top: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgba(130, 192, 254, 0.539);
+    background-color: rgba(254, 130, 130, 0.539);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .Player {
     margin-top: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgba(254, 130, 130, 0.539);
+    background-color: rgba(130, 192, 254, 0.539);
     background-repeat: no-repeat;
     background-position: center;
 }
