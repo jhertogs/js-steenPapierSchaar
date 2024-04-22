@@ -1,0 +1,102 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.container-layout{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.game-div{
+    height: 450px;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; 
+    background-color: rgba(137, 242, 252, 0.507);
+}
+.choose{
+    
+    background-color: rgba(0, 0, 255, 0.103);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 10%;
+    
+}
+.rockdiv{
+    margin-top: 25px;
+    margin-left: 25%;
+}
+.paperdiv {
+    margin-top: 25px;
+    margin-left: 25%;
+}
+.scissorsdiv {
+    margin-top: 25px;
+    margin-left: 25%;
+}
+
+.rock{
+    width: 100px;
+    height: 65px;
+    background-color: rgb(152, 240, 184);
+    border-style: none;
+    font-size: large;
+}
+.paper {
+    width: 100px;
+    height: 65px;
+    background-color: rgb(152, 240, 184);
+    border-style: none;
+    font-size: large;
+}
+.scissors{
+    width: 100px;
+    height: 65px;
+    background-color: rgb(152, 240, 184);
+    border-style: none;
+    font-size: large;
+}
+
+.PC {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(130, 192, 254, 0.539);
+}
+.Player {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(254, 130, 130, 0.539);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+}
+.status-msg{
+    
+    margin-top: 20px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font-size: large;
+}
