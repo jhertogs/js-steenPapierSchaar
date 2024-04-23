@@ -3,6 +3,7 @@ const paper = document.getElementById("paper")
 const scissors = document.getElementById("scissors")
 let ronde = 0;
 let gewonnen = 0;
+let PC = 0;
 
 const rps =  {
     1: "steen",
@@ -16,10 +17,15 @@ const rps =  {
 rock.addEventListener("click", function() {
 
     if (ronde >= 3){
-        if (gewonnen >= 2){
+        if (gewonnen == PC){
+            document.getElementById("status-msg").innerHTML = "<h3> Gelijkspel!</h3>"
+            document.getElementById("status-msg").style.backgroundColor = 'rgba(30, 78, 255, 0.539)'
+        }
+        if (gewonnen > PC){
             document.getElementById("status-msg").innerHTML = "<h3> Je hebt gewonnen!</h3>"
             document.getElementById("status-msg").style.backgroundColor = 'rgb(38, 253, 110)'
-        }else{
+        }
+        if (gewonnen < PC){
             document.getElementById("status-msg").innerHTML = "<h3> Je hebt verloren!</h3>"
             document.getElementById("status-msg").style.backgroundColor = 'rgb(239, 65, 22)'
         }
@@ -34,13 +40,17 @@ rock.addEventListener("click", function() {
     document.getElementById("PC").style.backgroundImage = "url('http://localhost/js%20steenpapierschaar/images/" + computerChoice + ".png')"
 
     if(computerChoice == "papier") {
-        gewonnen--
+        PC++
     }
     if (computerChoice == "schaar"){
         gewonnen++
     }
+    if (computerChoice == "steen"){
+        PC++
+        gewonnen++
+    }
     
-   
+   console.log(gewonnen, PC)
     ronde++
     document.getElementById("ronde-box").innerHTML = "Ronde: " + ronde + "."
 })
@@ -48,10 +58,14 @@ rock.addEventListener("click", function() {
 paper.addEventListener("click", function() {
 
     if (ronde >= 3){
-        if (gewonnen >= 2){
+        if (gewonnen == PC){
+            document.getElementById("status-msg").innerHTML = "<h3> Gelijkspel!</h3>"
+            document.getElementById("status-msg").style.backgroundColor = 'rgba(30, 78, 255, 0.539)'
+        }
+        if (gewonnen > PC){
             document.getElementById("status-msg").innerHTML = "<h3> Je hebt gewonnen!</h3>"
             document.getElementById("status-msg").style.backgroundColor = 'rgb(38, 253, 110)'
-        }else{
+        }if (gewonnen < PC){
             document.getElementById("status-msg").innerHTML = "<h3> Je hebt verloren!</h3>"
             document.getElementById("status-msg").style.backgroundColor = 'rgb(239, 65, 22)'
         }
@@ -66,13 +80,17 @@ paper.addEventListener("click", function() {
 
     if (computerChoice == "schaar"){
        
-        gewonnen--
+        PC++
     }
     if (computerChoice == "steen") {
         
         gewonnen++
     }
-    
+    if (computerChoice == "papier"){
+        PC++
+        gewonnen++
+    }
+    console.log(gewonnen, PC)
     ronde++
     document.getElementById("ronde-box").innerHTML = "Ronde: " + ronde + "."
 })
@@ -80,10 +98,14 @@ paper.addEventListener("click", function() {
 scissors.addEventListener("click", function() {
 
     if (ronde >= 3){
-        if (gewonnen >= 2){
+        if (gewonnen == PC){
+            document.getElementById("status-msg").innerHTML = "<h3> Gelijkspel!</h3>"
+            document.getElementById("status-msg").style.backgroundColor = 'rgba(30, 78, 255, 0.539)'
+        }
+        if (gewonnen > PC){
             document.getElementById("status-msg").innerHTML = "<h3> Je hebt gewonnen!</h3>"
             document.getElementById("status-msg").style.backgroundColor = 'rgb(38, 253, 110)'
-        }else{
+        } if (gewonnen < PC){
             document.getElementById("status-msg").innerHTML = "<h3> Je hebt verloren!</h3>"
             document.getElementById("status-msg").style.backgroundColor = 'rgb(239, 65, 22)'
         }
@@ -97,13 +119,17 @@ scissors.addEventListener("click", function() {
     document.getElementById("PC").style.backgroundImage = "url('http://localhost/js%20steenpapierschaar/images/" + computerChoice + ".png')"
 
     if (computerChoice == "steen"){
-        gewonnen--
+        PC++
     }
     if (computerChoice == "papier") {
         gewonnen++
     }
+    if (computerChoice == "schaar"){
+        PC++
+        gewonnen++
+    }
     
-    
+    console.log(gewonnen, PC)
     ronde++
     document.getElementById("ronde-box").innerHTML = "Ronde: " + ronde + "."
 })

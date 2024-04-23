@@ -22,16 +22,22 @@ h2 {
     
 }
 .game-div{
+    
     height: 450px;
     width: 50vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 40px; 
     background-color: rgba(137, 242, 252, 0.507);
 }
+.game-titles{
+    flex-direction: row;
+}
 .choose{
     text-align: center;
+   
     background-color: rgba(0, 0, 255, 0.103);
     display: flex;
     justify-content: space-evenly;
@@ -76,9 +82,14 @@ h2 {
     border-style: none;
     font-size: large;
 }
-
+.player-div,
+.PC-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .PC {
-    margin-top: 100px;
+    
     width: 200px;
     height: 200px;
     background-color: rgba(254, 130, 130, 0.539);
@@ -86,7 +97,7 @@ h2 {
     background-position: center;
 }
 .Player {
-    margin-top: 100px;
+
     width: 200px;
     height: 200px;
     background-color: rgba(130, 192, 254, 0.539);
