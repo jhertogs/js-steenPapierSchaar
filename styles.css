@@ -31,14 +31,16 @@ h2 {
     background-color: rgba(137, 242, 252, 0.507);
 }
 .choose{
-    
+    text-align: center;
     background-color: rgba(0, 0, 255, 0.103);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     width: 10%;
     
 }
+/*
 .rockdiv{
     margin-top: 25px;
     margin-left: 25%;
@@ -51,6 +53,7 @@ h2 {
     margin-top: 25px;
     margin-left: 25%;
 }
+*/
 
 .rock{
     width: 100px;
