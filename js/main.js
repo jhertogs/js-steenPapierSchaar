@@ -40,12 +40,15 @@ rock.addEventListener("click", function() {
     document.getElementById("PC").style.backgroundImage = "url('http://localhost/js%20steenpapierschaar/images/" + computerChoice + ".png')"
 
     if(computerChoice == "papier") {
+        document.getElementById("ronde-status").innerHTML = "Je hebt deze ronde verloren"
         PC++
     }
     if (computerChoice == "schaar"){
+        document.getElementById("ronde-status").innerHTML = "Je hebt deze ronde gewonnen"
         gewonnen++
     }
     if (computerChoice == "steen"){
+        document.getElementById("ronde-status").innerHTML = "Deze ronde is gelijkspel"
         PC++
         gewonnen++
     }
@@ -79,14 +82,16 @@ paper.addEventListener("click", function() {
     document.getElementById("PC").style.backgroundImage = "url('http://localhost/js%20steenpapierschaar/images/" + computerChoice + ".png')"
 
     if (computerChoice == "schaar"){
+        document.getElementById("ronde-status").innerHTML = "Je hebt deze ronde verloren"
        
         PC++
     }
     if (computerChoice == "steen") {
-        
+        document.getElementById("ronde-status").innerHTML = "Je hebt deze ronde gewonnen"
         gewonnen++
     }
     if (computerChoice == "papier"){
+        document.getElementById("ronde-status").innerHTML = "Deze ronde is gelijkspel"
         PC++
         gewonnen++
     }
@@ -119,12 +124,15 @@ scissors.addEventListener("click", function() {
     document.getElementById("PC").style.backgroundImage = "url('http://localhost/js%20steenpapierschaar/images/" + computerChoice + ".png')"
 
     if (computerChoice == "steen"){
+        document.getElementById("ronde-status").innerHTML = "Je hebt deze ronde verloren"
         PC++
     }
     if (computerChoice == "papier") {
+        document.getElementById("ronde-status").innerHTML = "Je hebt deze ronde gewonnen"
         gewonnen++
     }
     if (computerChoice == "schaar"){
+        document.getElementById("ronde-status").innerHTML = "Deze ronde is gelijkspel"
         PC++
         gewonnen++
     }
